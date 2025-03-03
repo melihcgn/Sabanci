@@ -1,0 +1,217 @@
+<form action="insert.php" method="POST"> 
+    Add drug ---->
+
+    Drugs id: 
+    <input type="text" id="dig" name="dig"> 
+    Drugs price: 
+    <input type="text" id="price" name="price">
+    Drugs name:
+    <input type="text" id="dname" name="dname">
+    Drugs rating:
+    <input type="text" id="ratings" name="ratings">
+
+
+    <br>
+    Add user ---->
+
+    user id: 
+    <input type="text" id="uid" name="uid"> 
+    user email: 
+    <input type="text" id="email" name="email">
+    user password:
+    <input type="text" id="password" name="password">
+    user nickname:
+    <input type="text" id="nickname" name="nickname">
+
+    <br>
+    Add shipment ---->
+
+    shipment id: 
+    <input type="text" id="shipid" name="shipid"> 
+    shipment date: 
+    <input type="text" id="shipDate" name="shipDate">
+    shipment name:
+    <input type="text" id="shipName" name="shipName">
+    shipment price:
+    <input type="text" id="shipPrice" name="shipPrice">
+
+
+    <br>
+    Add seller ---->
+
+    user id: 
+    <input type="text" id="user_id" name="user_id"> 
+    seller rating: 
+    <input type="text" id="srating" name="srating">
+
+
+
+
+    <br>
+    Add basket ---->
+
+    total price: 
+    <input type="text" id="Total_price" name="Total_price"> 
+    basket id: 
+    <input type="text" id="bid" name="bid">
+
+
+
+    <br>
+    Add orders ---->
+
+    order id: 
+    <input type="text" id="oid1" name="oid1"> 
+    order date: 
+    <input type="text" id="o_date" name="o_date">
+
+    <br>
+    Add buyer ---->
+
+    user id: 
+    <input type="text" id="user_id2" name="user_id2"> 
+    buyer address: 
+    <input type="text" id="baddress" name="baddress">
+
+
+
+
+    <br>
+    Add sets_up (relation) ---->
+
+    shipment id: 
+    <input type="text" id="shipid" name="shipid"> 
+    user id: 
+    <input type="text" id="user_id3" name="user_id3">
+
+
+    
+    <br>
+    Add buys (relation) ---->
+
+    user id: 
+    <input type="text" id="user_id4" name="user_id4"> 
+    drug id: 
+    <input type="text" id="dig2" name="dig2">
+
+
+    <br>
+    Add gives (relation) ---->
+
+    user id: 
+    <input type="text" id="user_id5" name="user_id5"> 
+    order id: 
+    <input type="text" id="oid2" name="oid2">
+
+
+    <br>
+    Add inside_of (relation) ---->
+
+    basket id: 
+    <input type="text" id="bid2" name="bid2"> 
+    order id: 
+    <input type="text" id="oid3" name="oid3">
+
+
+    <br>
+    Add sells (relation) ---->
+
+    user id: 
+    <input type="text" id="user_id6" name="user_id6"> 
+    drug id: 
+    <input type="text" id="dig3" name="dig3">
+
+
+    <br>
+    Add takes (relation) ---->
+
+    user id: 
+    <input type="text" id="user_id7" name="user_id7"> 
+    order id: 
+    <input type="text" id="oid4" name="oid4">
+    <br>
+
+    <input type="submit" value="Add"> 
+
+
+
+</form> 
+
+<br><br><br>
+<form action="delete.php" method="POST"> 
+    Delete drug----> whose drug id is
+    <input type="text" id="digs" name="digs"> 
+    <br>
+    Delete user----> whose user id is
+    <input type="text" id="uid" name="uid">
+    <br>
+    Delete basket----> whose basket id is
+    <input type="text" id="bid" name="bid"> 
+    <br>
+    Delete shipment----> whose ship id is
+    <input type="text" id="shipid" name="shipid"> 
+    <br>
+    Delete seller----> whose user id is
+    <input type="text" id="user_id" name="user_id"> 
+    <br>
+    Delete buyer----> whose user id is
+    <input type="text" id="user_id2" name="user_id2"> 
+    <br>
+    Delete order----> whose order id is
+    <input type="text" id="oid" name="oid"> 
+    <br>
+    Delete sets_up (relation)----> whose ship id is
+    <input type="text" id="shipid2" name="shipid2"> 
+    and user id is
+    <input type="text" id="user_id3" name="user_id3"> 
+    <br>
+    Delete buys (relation)----> whose user id is
+    <input type="text" id="user_id4" name="user_id4"> 
+    and drug id is
+
+    <input type="text" id="dig" name="dig"> 
+    <br>
+    Delete gives (relation)----> whose user id is
+    <input type="text" id="user_id5" name="user_id5"> 
+    and order id is
+
+    <input type="text" id="oid2" name="oid2"> 
+
+    <br>
+    Delete inside_of (relation)----> whose basket id is
+    <input type="text" id="bid2" name="bid2"> 
+    and order id is
+
+    <input type="text" id="oid3" name="oid3"> 
+    <br>
+    Delete sells (relation)----> whose user id is
+    <input type="text" id="user_id6" name="user_id6"> 
+    and drug id is
+
+    <input type="text" id="dig" name="dig"> 
+
+    <br>
+    Delete takes (relation)----> whose user id is
+    <input type="text" id="user_id7" name="user_id7"> 
+    and order id is
+
+    <input type="text" id="oid4" name="oid4"> 
+    <br>
+
+        <input type="submit" value="Delete"> 
+
+
+</form> 
+<br><br><br>
+
+<form action="selection.php" method="POST"> 
+    Select drugs----> whose prices are
+    larger than
+    <input type="text" id="sprc" name="sprc"> 
+
+    and smaller than
+    <input type="text" id="lprc" name="lprc"> 
+
+    <input type="submit" value="Select"> 
+</form> 
+
